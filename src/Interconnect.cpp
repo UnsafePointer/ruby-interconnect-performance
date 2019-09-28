@@ -67,7 +67,7 @@ std::optional<Range> Interconnect::binarySearch(uint32_t address, std::vector<Ra
 
     uint32_t size = top - bottom;
     uint32_t middle = size / 2;
-    Range range = ranges->at(middle);
+    Range range = ranges->at(bottom + middle);
     int32_t result = range.contains(address);
     if (result == 0) {
         return { range };
