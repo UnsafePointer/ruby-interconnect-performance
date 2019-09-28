@@ -1,8 +1,8 @@
 Flat profile:
 
 Each sample counts as 0.01 seconds.
-  %   cumulative   self              self     total           
- time   seconds   seconds    calls  ms/call  ms/call  name    
+  %   cumulative   self              self     total
+ time   seconds   seconds    calls  ms/call  ms/call  name
  20.33      2.38     2.38 100000000     0.00     0.00  Interconnect::binarySearch(unsigned int, std::vector<Range, std::allocator<Range> > const*, unsigned int, unsigned int) const
  11.62      3.74     1.36 1099800624     0.00     0.00  std::vector<Range, std::allocator<Range> >::size() const
   6.41      4.49     0.75 200000000     0.00     0.00  std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
