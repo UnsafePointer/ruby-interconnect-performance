@@ -1,0 +1,967 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 20.33      2.38     2.38 100000000     0.00     0.00  Interconnect::binarySearch(unsigned int, std::vector<Range, std::allocator<Range> > const*, unsigned int, unsigned int) const
+ 11.62      3.74     1.36 1099800624     0.00     0.00  std::vector<Range, std::allocator<Range> >::size() const
+  6.41      4.49     0.75 200000000     0.00     0.00  std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  6.32      5.23     0.74 499900300     0.00     0.00  std::vector<Range, std::allocator<Range> >::_M_range_check(unsigned long) const
+  4.44      5.75     0.52 499900300     0.00     0.00  Range::contains(unsigned int) const
+  3.84      6.20     0.45 500393728     0.00     0.00  Range::~Range()
+  3.76      6.64     0.44 499900300     0.00     0.00  std::vector<Range, std::allocator<Range> >::at(unsigned long) const
+  3.20      7.02     0.38 400000000     0.00     0.00  std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  2.56      7.32     0.30 100000000     0.00     0.00  int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)
+  2.48      7.61     0.29                             main
+  2.39      7.89     0.28 100000000     0.00     0.00  Interconnect::maskRegion(unsigned int) const
+  2.26      8.15     0.27 200000000     0.00     0.00  std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  2.14      8.40     0.25 499900300     0.00     0.00  std::vector<Range, std::allocator<Range> >::operator[](unsigned long) const
+  1.96      8.63     0.23 100000000     0.00     0.00  std::_Optional_payload<Range, false, false>::~_Optional_payload()
+  1.96      8.86     0.23 100000000     0.00     0.00  Interconnect::load(unsigned int) const
+  1.88      9.08     0.22 200000000     0.00     0.00  std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  1.37      9.24     0.16 200000000     0.00     0.00  std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  1.32      9.40     0.16 100000000     0.00     0.00  std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int)
+  1.24      9.54     0.15 99506637     0.00     0.00  std::_Optional_base<Range>::_Optional_base(std::nullopt_t)
+  1.15      9.68     0.14 99506637     0.00     0.00  std::_Optional_payload<Range, false, false>::_Optional_payload()
+  1.11      9.81     0.13       17     7.65    10.00  std::vector<Range, std::allocator<Range> >::push_back(Range const&)
+  1.03      9.93     0.12 100000000     0.00     0.00  __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::~_Save_errno()
+  0.90     10.03     0.11                             std::dec(std::ios_base&)
+  0.90     10.14     0.11 100000000     0.00     0.00  __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Range_chk::_S_chk(long, std::integral_constant<bool, true>)
+  0.90     10.24     0.11 100000000     0.00     0.00  __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::_Save_errno()
+  0.85     10.34     0.10 100000000     0.00     0.00  std::_Optional_base<Range>::~_Optional_base()
+  0.81     10.44     0.10 200000000     0.00     0.00  std::operator~(std::_Ios_Fmtflags)
+  0.77     10.53     0.09 100000004     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data() const
+  0.77     10.62     0.09 100000000     0.00     0.00  std::optional<Range>::operator bool() const
+  0.73     10.70     0.09 100000000     0.00     0.00  std::_Head_base<0ul, Interconnect*, false>::_M_head(std::_Head_base<0ul, Interconnect*, false> const&)
+  0.68     10.78     0.08 100000000     0.00     0.00  std::_Optional_base<Range>::_M_is_engaged() const
+  0.68     10.86     0.08   493363     0.00     0.00  std::_Optional_base<Range>::_Optional_base<Range&, false>(std::in_place_t, Range&)
+  0.64     10.94     0.08 100000000     0.00     0.00  Interconnect* const& std::__get_helper<0ul, Interconnect*, std::default_delete<Interconnect> >(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> > const&)
+  0.60     11.01     0.07 100000000     0.00     0.00  std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> > const&)
+  0.60     11.08     0.07 100000000     0.00     0.00  std::tuple_element<0ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type const& std::get<0ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> > const&)
+  0.51     11.14     0.06 100000000     0.00     0.00  std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::operator->() const
+  0.51     11.20     0.06 100000000     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::c_str() const
+  0.47     11.25     0.06 100000000     0.00     0.00  bool std::operator!=<Range>(std::optional<Range> const&, std::nullopt_t)
+  0.43     11.30     0.05 100000000     0.00     0.00  std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::get() const
+  0.43     11.35     0.05 100000000     0.00     0.00  std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_ptr() const
+  0.43     11.40     0.05 100000000     0.00     0.00  std::optional<Range>::~optional()
+  0.43     11.45     0.05 99506637     0.00     0.00  std::optional<Range>::optional(std::nullopt_t)
+  0.34     11.49     0.04        6     6.67     6.67  void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&)
+  0.34     11.53     0.04        1    40.01   115.04  std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_deleter()
+  0.30     11.57     0.04        1    35.01    35.01  std::_Head_base<1ul, std::default_delete<Interconnect>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Interconnect>, true>&)
+  0.26     11.60     0.03        1    30.01    65.02  std::default_delete<Interconnect>& std::__get_helper<1ul, std::default_delete<Interconnect>>(std::_Tuple_impl<1ul, std::default_delete<Interconnect>>&)
+  0.17     11.62     0.02       17     1.18     1.18  Range::Range(unsigned int, unsigned int)
+  0.17     11.64     0.02        1    20.01    30.01  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string()
+  0.13     11.65     0.02   493363     0.00     0.00  std::optional<Range>::optional<Range&, true>(Range&)
+  0.13     11.67     0.02        2     7.50     7.50  std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+  0.09     11.68     0.01        1    10.00    10.00  Interconnect::~Interconnect()
+  0.09     11.69     0.01        1    10.00    10.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_set_length(unsigned long)
+  0.09     11.70     0.01        1    10.00    75.03  std::tuple_element<1ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type& std::get<1ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> >&)
+  0.09     11.71     0.01                             void std::allocator_traits<std::allocator<Range> >::destroy<Range>(std::allocator<Range>&, Range*)
+  0.04     11.71     0.01        2     2.50     2.50  char const* std::addressof<char const>(char const&)
+  0.00     11.71     0.00  1480089     0.00     0.00  Range& std::forward<Range&>(std::remove_reference<Range&>::type&)
+  0.00     11.71     0.00   493363     0.00     0.00  Range::offset(unsigned int) const
+  0.00     11.71     0.00   493363     0.00     0.00  std::optional<Range>::operator*() &
+  0.00     11.71     0.00   493363     0.00     0.00  std::_Optional_base<Range>::_M_get()
+  0.00     11.71     0.00   493363     0.00     0.00  std::_Optional_payload<Range, false, false>::_Optional_payload<Range&>(std::in_place_t, Range&)
+  0.00     11.71     0.00       86     0.00     0.00  std::move_iterator<Range*>::base() const
+  0.00     11.71     0.00       79     0.00     0.00  Range* std::__addressof<Range>(Range&)
+  0.00     11.71     0.00       48     0.00     0.00  void std::_Destroy<Range>(Range*)
+  0.00     11.71     0.00       48     0.00     0.00  operator new(unsigned long, void*)
+  0.00     11.71     0.00       43     0.00     0.00  bool std::operator==<Range*>(std::move_iterator<Range*> const&, std::move_iterator<Range*> const&)
+  0.00     11.71     0.00       43     0.00     0.00  bool std::operator!=<Range*>(std::move_iterator<Range*> const&, std::move_iterator<Range*> const&)
+  0.00     11.71     0.00       40     0.00     0.00  Range const& std::forward<Range const&>(std::remove_reference<Range const&>::type&)
+  0.00     11.71     0.00       31     0.00     0.00  std::move_iterator<Range*>::operator*() const
+  0.00     11.71     0.00       31     0.00     0.00  std::move_iterator<Range*>::operator++()
+  0.00     11.71     0.00       31     0.00     0.00  void std::_Construct<Range, Range>(Range*, Range&&)
+  0.00     11.71     0.00       31     0.00     0.00  Range&& std::forward<Range>(std::remove_reference<Range>::type&)
+  0.00     11.71     0.00       24     0.00     0.00  __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::base() const
+  0.00     11.71     0.00       24     0.00     0.00  std::move_iterator<Range*>::move_iterator(Range*)
+  0.00     11.71     0.00       24     0.00     0.00  std::move_iterator<Range*> std::__make_move_if_noexcept_iterator<Range, std::move_iterator<Range*> >(Range*)
+  0.00     11.71     0.00       19     0.00     0.00  std::_Vector_base<Range, std::allocator<Range> >::_M_get_Tp_allocator()
+  0.00     11.71     0.00       18     0.00     0.00  __gnu_cxx::new_allocator<Range>::max_size() const
+  0.00     11.71     0.00       17     0.00     0.00  void __gnu_cxx::new_allocator<Range>::construct<Range, Range const&>(Range*, Range const&)
+  0.00     11.71     0.00       17     0.00     0.00  void std::allocator_traits<std::allocator<Range> >::construct<Range, Range const&>(std::allocator<Range>&, Range*, Range const&)
+  0.00     11.71     0.00       12     0.00     0.00  __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::__normal_iterator(Range* const&)
+  0.00     11.71     0.00       12     0.00     0.00  std::_Vector_base<Range, std::allocator<Range> >::_M_get_Tp_allocator() const
+  0.00     11.71     0.00       12     0.00     0.00  std::vector<Range, std::allocator<Range> >::max_size() const
+  0.00     11.71     0.00       12     0.00     0.00  std::allocator_traits<std::allocator<Range> >::max_size(std::allocator<Range> const&)
+  0.00     11.71     0.00       12     0.00     0.00  Range* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*)
+  0.00     11.71     0.00       12     0.00     0.00  Range* std::uninitialized_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*)
+  0.00     11.71     0.00       12     0.00     0.00  Range* std::__uninitialized_copy_a<std::move_iterator<Range*>, Range*, Range>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*, std::allocator<Range>&)
+  0.00     11.71     0.00       12     0.00     0.00  Range* std::__uninitialized_move_if_noexcept_a<Range*, Range*, std::allocator<Range> >(Range*, Range*, Range*, std::allocator<Range>&)
+  0.00     11.71     0.00        7     0.00     0.00  void std::_Destroy_aux<false>::__destroy<Range*>(Range*, Range*)
+  0.00     11.71     0.00        7     0.00     0.00  std::_Vector_base<Range, std::allocator<Range> >::_M_deallocate(Range*, unsigned long)
+  0.00     11.71     0.00        7     0.00     0.00  void std::_Destroy<Range*>(Range*, Range*)
+  0.00     11.71     0.00        7     0.00     0.00  void std::_Destroy<Range*, Range>(Range*, Range*, std::allocator<Range>&)
+  0.00     11.71     0.00        6     0.00     0.00  __gnu_cxx::new_allocator<Range>::deallocate(Range*, unsigned long)
+  0.00     11.71     0.00        6     0.00     0.00  __gnu_cxx::new_allocator<Range>::allocate(unsigned long, void const*)
+  0.00     11.71     0.00        6     0.00     0.00  __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::difference_type __gnu_cxx::operator-<Range*, std::vector<Range, std::allocator<Range> > >(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > > const&, __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > > const&)
+  0.00     11.71     0.00        6     0.00     0.00  std::vector<Range, std::allocator<Range> >::_M_check_len(unsigned long, char const*) const
+  0.00     11.71     0.00        6     0.00     0.00  std::_Vector_base<Range, std::allocator<Range> >::_M_allocate(unsigned long)
+  0.00     11.71     0.00        6     0.00     0.00  std::allocator_traits<std::allocator<Range> >::deallocate(std::allocator<Range>&, Range*, unsigned long)
+  0.00     11.71     0.00        6     0.00     0.00  std::allocator_traits<std::allocator<Range> >::allocate(std::allocator<Range>&, unsigned long)
+  0.00     11.71     0.00        6     0.00     0.00  std::vector<Range, std::allocator<Range> >::end()
+  0.00     11.71     0.00        6     0.00     0.00  std::vector<Range, std::allocator<Range> >::begin()
+  0.00     11.71     0.00        6     0.00     0.00  unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00     11.71     0.00        2     0.00     2.50  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_is_local() const
+  0.00     11.71     0.00        2     0.00     2.50  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data() const
+  0.00     11.71     0.00        2     0.00     0.00  std::_Head_base<0ul, Interconnect*, false>::_M_head(std::_Head_base<0ul, Interconnect*, false>&)
+  0.00     11.71     0.00        2     0.00     0.00  std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >&)
+  0.00     11.71     0.00        2     0.00     2.50  std::pointer_traits<char const*>::pointer_to(char const&)
+  0.00     11.71     0.00        2     0.00     0.00  std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_ptr()
+  0.00     11.71     0.00        2     0.00     2.50  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()
+  0.00     11.71     0.00        2     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::~_Alloc_hider()
+  0.00     11.71     0.00        2     0.00     2.50  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()
+  0.00     11.71     0.00        2     0.00     0.00  char const* std::__addressof<char const>(char const&)
+  0.00     11.71     0.00        2     0.00     0.00  Interconnect*& std::__get_helper<0ul, Interconnect*, std::default_delete<Interconnect> >(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >&)
+  0.00     11.71     0.00        2     0.00     0.00  std::tuple_element<0ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type& std::get<0ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> >&)
+  0.00     11.71     0.00        1     0.00   190.07  Interconnect::Interconnect()
+  0.00     11.71     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<Range>::new_allocator()
+  0.00     11.71     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<Range>::~new_allocator()
+  0.00     11.71     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<char>::deallocate(char*, unsigned long)
+  0.00     11.71     0.00        1     0.00    10.00  std::default_delete<Interconnect>::operator()(Interconnect*) const
+  0.00     11.71     0.00        1     0.00     0.00  std::allocator<Range>::allocator()
+  0.00     11.71     0.00        1     0.00     0.00  std::allocator<Range>::~allocator()
+  0.00     11.71     0.00        1     0.00     0.00  std::_Head_base<0ul, Interconnect*, false>::_Head_base()
+  0.00     11.71     0.00        1     0.00     0.00  std::_Head_base<1ul, std::default_delete<Interconnect>, true>::_Head_base()
+  0.00     11.71     0.00        1     0.00   115.04  std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::get_deleter()
+  0.00     11.71     0.00        1     0.00     0.00  std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::unique_ptr<std::default_delete<Interconnect>, void>(Interconnect*)
+  0.00     11.71     0.00        1     0.00   125.04  std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::~unique_ptr()
+  0.00     11.71     0.00        1     0.00     0.00  std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_Tuple_impl()
+  0.00     11.71     0.00        1     0.00    35.01  std::_Tuple_impl<1ul, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Interconnect> >&)
+  0.00     11.71     0.00        1     0.00     0.00  std::_Tuple_impl<1ul, std::default_delete<Interconnect> >::_Tuple_impl()
+  0.00     11.71     0.00        1     0.00     0.00  std::char_traits<char>::assign(char&, char const&)
+  0.00     11.71     0.00        1     0.00     0.00  std::_Vector_base<Range, std::allocator<Range> >::_Vector_impl::_Vector_impl()
+  0.00     11.71     0.00        1     0.00     0.00  std::_Vector_base<Range, std::allocator<Range> >::_Vector_impl::~_Vector_impl()
+  0.00     11.71     0.00        1     0.00     0.00  std::_Vector_base<Range, std::allocator<Range> >::_Vector_base()
+  0.00     11.71     0.00        1     0.00     0.00  std::_Vector_base<Range, std::allocator<Range> >::~_Vector_base()
+  0.00     11.71     0.00        1     0.00     0.00  std::pointer_traits<char*>::pointer_to(char&)
+  0.00     11.71     0.00        1     0.00     0.00  std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::__uniq_ptr_impl(Interconnect*)
+  0.00     11.71     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<char> >::deallocate(std::allocator<char>&, char*, unsigned long)
+  0.00     11.71     0.00        1     0.00     0.00  std::tuple<Interconnect*, std::default_delete<Interconnect> >::tuple<Interconnect*, std::default_delete<Interconnect>, true>()
+  0.00     11.71     0.00        1     0.00     0.00  std::vector<Range, std::allocator<Range> >::vector()
+  0.00     11.71     0.00        1     0.00     0.00  std::vector<Range, std::allocator<Range> >::~vector()
+  0.00     11.71     0.00        1     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_destroy(unsigned long)
+  0.00     11.71     0.00        1     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::_Alloc_hider(char*, std::allocator<char>&&)
+  0.00     11.71     0.00        1     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data()
+  0.00     11.71     0.00        1     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_get_allocator()
+  0.00     11.71     0.00        1     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_length(unsigned long)
+  0.00     11.71     0.00        1     0.00     0.00  char* std::__addressof<char>(char&)
+  0.00     11.71     0.00        1     0.00   190.07  std::_MakeUniq<Interconnect>::__single_object std::make_unique<Interconnect>()
+  0.00     11.71     0.00        1     0.00     0.00  std::remove_reference<std::allocator<char>&>::type&& std::move<std::allocator<char>&>(std::allocator<char>&)
+  0.00     11.71     0.00        1     0.00     0.00  char* std::addressof<char>(char&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.09% of 11.71 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     83.1    0.29    9.44                 main [1]
+                0.23    7.45 100000000/100000000     Interconnect::load(unsigned int) const [2]
+                0.16    0.78 100000000/100000000     std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int) [9]
+                0.06    0.40 100000000/100000000     std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::operator->() const [12]
+                0.00    0.19       1/1           std::_MakeUniq<Interconnect>::__single_object std::make_unique<Interconnect>() [30]
+                0.00    0.13       1/1           std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::~unique_ptr() [37]
+                0.02    0.01       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string() [54]
+                0.02    0.00       2/2           std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [56]
+                0.00    0.01       2/2           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [62]
+-----------------------------------------------
+                0.23    7.45 100000000/100000000     main [1]
+[2]     65.6    0.23    7.45 100000000         Interconnect::load(unsigned int) const [2]
+                2.38    4.06 100000000/100000000     Interconnect::binarySearch(unsigned int, std::vector<Range, std::allocator<Range> > const*, unsigned int, unsigned int) const [3]
+                0.05    0.33 100000000/100000000     std::optional<Range>::~optional() [17]
+                0.28    0.00 100000000/100000000     Interconnect::maskRegion(unsigned int) const [24]
+                0.06    0.17 100000000/100000000     bool std::operator!=<Range>(std::optional<Range> const&, std::nullopt_t) [28]
+                0.12    0.00 100000000/1099800624     std::vector<Range, std::allocator<Range> >::size() const [7]
+                0.00    0.00  493363/493363      std::optional<Range>::operator*() & [82]
+                0.00    0.00  493363/493363      Range::offset(unsigned int) const [81]
+-----------------------------------------------
+                             399900300             Interconnect::binarySearch(unsigned int, std::vector<Range, std::allocator<Range> > const*, unsigned int, unsigned int) const [3]
+                2.38    4.06 100000000/100000000     Interconnect::load(unsigned int) const [2]
+[3]     55.0    2.38    4.06 100000000+399900300 Interconnect::binarySearch(unsigned int, std::vector<Range, std::allocator<Range> > const*, unsigned int, unsigned int) const [3]
+                0.44    1.61 499900300/499900300     std::vector<Range, std::allocator<Range> >::at(unsigned long) const [4]
+                0.62    0.00 499900300/1099800624     std::vector<Range, std::allocator<Range> >::size() const [7]
+                0.52    0.00 499900300/499900300     Range::contains(unsigned int) const [11]
+                0.45    0.00 499900300/500393728     Range::~Range() [13]
+                0.05    0.28 99506637/99506637     std::optional<Range>::optional(std::nullopt_t) [21]
+                0.02    0.08  493363/493363      std::optional<Range>::optional<Range&, true>(Range&) [44]
+                             399900300             Interconnect::binarySearch(unsigned int, std::vector<Range, std::allocator<Range> > const*, unsigned int, unsigned int) const [3]
+-----------------------------------------------
+                0.44    1.61 499900300/499900300     Interconnect::binarySearch(unsigned int, std::vector<Range, std::allocator<Range> > const*, unsigned int, unsigned int) const [3]
+[4]     17.5    0.44    1.61 499900300         std::vector<Range, std::allocator<Range> >::at(unsigned long) const [4]
+                0.74    0.62 499900300/499900300     std::vector<Range, std::allocator<Range> >::_M_range_check(unsigned long) const [8]
+                0.25    0.00 499900300/499900300     std::vector<Range, std::allocator<Range> >::operator[](unsigned long) const [25]
+-----------------------------------------------
+                                                 <spontaneous>
+[5]     16.8    0.11    1.87                 std::dec(std::ios_base&) [5]
+                0.75    1.12 200000000/200000000     std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [6]
+-----------------------------------------------
+                0.75    1.12 200000000/200000000     std::dec(std::ios_base&) [5]
+[6]     15.9    0.75    1.12 200000000         std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [6]
+                0.27    0.16 200000000/200000000     std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [14]
+                0.22    0.19 200000000/200000000     std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [15]
+                0.19    0.00 200000000/400000000     std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [18]
+                0.10    0.00 200000000/200000000     std::operator~(std::_Ios_Fmtflags) [43]
+-----------------------------------------------
+                0.00    0.00      24/1099800624     std::vector<Range, std::allocator<Range> >::_M_check_len(unsigned long, char const*) const [71]
+                0.12    0.00 100000000/1099800624     Interconnect::load(unsigned int) const [2]
+                0.62    0.00 499900300/1099800624     Interconnect::binarySearch(unsigned int, std::vector<Range, std::allocator<Range> > const*, unsigned int, unsigned int) const [3]
+                0.62    0.00 499900300/1099800624     std::vector<Range, std::allocator<Range> >::_M_range_check(unsigned long) const [8]
+[7]     11.6    1.36    0.00 1099800624         std::vector<Range, std::allocator<Range> >::size() const [7]
+-----------------------------------------------
+                0.74    0.62 499900300/499900300     std::vector<Range, std::allocator<Range> >::at(unsigned long) const [4]
+[8]     11.6    0.74    0.62 499900300         std::vector<Range, std::allocator<Range> >::_M_range_check(unsigned long) const [8]
+                0.62    0.00 499900300/1099800624     std::vector<Range, std::allocator<Range> >::size() const [7]
+-----------------------------------------------
+                0.16    0.78 100000000/100000000     main [1]
+[9]      8.0    0.16    0.78 100000000         std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int) [9]
+                0.30    0.33 100000000/100000000     int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [10]
+                0.06    0.09 100000000/100000000     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::c_str() const [35]
+-----------------------------------------------
+                0.30    0.33 100000000/100000000     std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int) [9]
+[10]     5.4    0.30    0.33 100000000         int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [10]
+                0.12    0.00 100000000/100000000     __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::~_Save_errno() [38]
+                0.11    0.00 100000000/100000000     __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::_Save_errno() [42]
+                0.11    0.00 100000000/100000000     __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Range_chk::_S_chk(long, std::integral_constant<bool, true>) [41]
+-----------------------------------------------
+                0.52    0.00 499900300/499900300     Interconnect::binarySearch(unsigned int, std::vector<Range, std::allocator<Range> > const*, unsigned int, unsigned int) const [3]
+[11]     4.4    0.52    0.00 499900300         Range::contains(unsigned int) const [11]
+-----------------------------------------------
+                0.06    0.40 100000000/100000000     main [1]
+[12]     3.9    0.06    0.40 100000000         std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::operator->() const [12]
+                0.05    0.35 100000000/100000000     std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::get() const [16]
+-----------------------------------------------
+                0.00    0.00      17/500393728     Interconnect::Interconnect() [29]
+                0.00    0.00      48/500393728     void std::_Destroy<Range>(Range*) [67]
+                0.00    0.00  493363/500393728     std::_Optional_payload<Range, false, false>::~_Optional_payload() [26]
+                0.45    0.00 499900300/500393728     Interconnect::binarySearch(unsigned int, std::vector<Range, std::allocator<Range> > const*, unsigned int, unsigned int) const [3]
+[13]     3.8    0.45    0.00 500393728         Range::~Range() [13]
+-----------------------------------------------
+                0.27    0.16 200000000/200000000     std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [6]
+[14]     3.6    0.27    0.16 200000000         std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [14]
+                0.16    0.00 200000000/200000000     std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [33]
+-----------------------------------------------
+                0.22    0.19 200000000/200000000     std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [6]
+[15]     3.5    0.22    0.19 200000000         std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [15]
+                0.19    0.00 200000000/400000000     std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [18]
+-----------------------------------------------
+                0.05    0.35 100000000/100000000     std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::operator->() const [12]
+[16]     3.4    0.05    0.35 100000000         std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::get() const [16]
+                0.05    0.30 100000000/100000000     std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_ptr() const [19]
+-----------------------------------------------
+                0.05    0.33 100000000/100000000     Interconnect::load(unsigned int) const [2]
+[17]     3.2    0.05    0.33 100000000         std::optional<Range>::~optional() [17]
+                0.10    0.23 100000000/100000000     std::_Optional_base<Range>::~_Optional_base() [20]
+-----------------------------------------------
+                0.19    0.00 200000000/400000000     std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [15]
+                0.19    0.00 200000000/400000000     std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [6]
+[18]     3.2    0.38    0.00 400000000         std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [18]
+-----------------------------------------------
+                0.05    0.30 100000000/100000000     std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::get() const [16]
+[19]     3.0    0.05    0.30 100000000         std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_ptr() const [19]
+                0.07    0.23 100000000/100000000     std::tuple_element<0ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type const& std::get<0ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> > const&) [22]
+-----------------------------------------------
+                0.10    0.23 100000000/100000000     std::optional<Range>::~optional() [17]
+[20]     2.8    0.10    0.23 100000000         std::_Optional_base<Range>::~_Optional_base() [20]
+                0.23    0.00 100000000/100000000     std::_Optional_payload<Range, false, false>::~_Optional_payload() [26]
+-----------------------------------------------
+                0.05    0.28 99506637/99506637     Interconnect::binarySearch(unsigned int, std::vector<Range, std::allocator<Range> > const*, unsigned int, unsigned int) const [3]
+[21]     2.8    0.05    0.28 99506637         std::optional<Range>::optional(std::nullopt_t) [21]
+                0.15    0.14 99506637/99506637     std::_Optional_base<Range>::_Optional_base(std::nullopt_t) [23]
+-----------------------------------------------
+                0.07    0.23 100000000/100000000     std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_ptr() const [19]
+[22]     2.6    0.07    0.23 100000000         std::tuple_element<0ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type const& std::get<0ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> > const&) [22]
+                0.08    0.16 100000000/100000000     Interconnect* const& std::__get_helper<0ul, Interconnect*, std::default_delete<Interconnect> >(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> > const&) [27]
+-----------------------------------------------
+                0.15    0.14 99506637/99506637     std::optional<Range>::optional(std::nullopt_t) [21]
+[23]     2.4    0.15    0.14 99506637         std::_Optional_base<Range>::_Optional_base(std::nullopt_t) [23]
+                0.14    0.00 99506637/99506637     std::_Optional_payload<Range, false, false>::_Optional_payload() [36]
+-----------------------------------------------
+                0.28    0.00 100000000/100000000     Interconnect::load(unsigned int) const [2]
+[24]     2.4    0.28    0.00 100000000         Interconnect::maskRegion(unsigned int) const [24]
+-----------------------------------------------
+                0.25    0.00 499900300/499900300     std::vector<Range, std::allocator<Range> >::at(unsigned long) const [4]
+[25]     2.1    0.25    0.00 499900300         std::vector<Range, std::allocator<Range> >::operator[](unsigned long) const [25]
+-----------------------------------------------
+                0.23    0.00 100000000/100000000     std::_Optional_base<Range>::~_Optional_base() [20]
+[26]     2.0    0.23    0.00 100000000         std::_Optional_payload<Range, false, false>::~_Optional_payload() [26]
+                0.00    0.00  493363/500393728     Range::~Range() [13]
+-----------------------------------------------
+                0.08    0.16 100000000/100000000     std::tuple_element<0ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type const& std::get<0ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> > const&) [22]
+[27]     2.0    0.08    0.16 100000000         Interconnect* const& std::__get_helper<0ul, Interconnect*, std::default_delete<Interconnect> >(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> > const&) [27]
+                0.07    0.09 100000000/100000000     std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> > const&) [34]
+-----------------------------------------------
+                0.06    0.17 100000000/100000000     Interconnect::load(unsigned int) const [2]
+[28]     1.9    0.06    0.17 100000000         bool std::operator!=<Range>(std::optional<Range> const&, std::nullopt_t) [28]
+                0.09    0.08 100000000/100000000     std::optional<Range>::operator bool() const [32]
+-----------------------------------------------
+                0.00    0.19       1/1           std::_MakeUniq<Interconnect>::__single_object std::make_unique<Interconnect>() [30]
+[29]     1.6    0.00    0.19       1         Interconnect::Interconnect() [29]
+                0.13    0.04      17/17          std::vector<Range, std::allocator<Range> >::push_back(Range const&) [31]
+                0.02    0.00      17/17          Range::Range(unsigned int, unsigned int) [55]
+                0.00    0.00      17/500393728     Range::~Range() [13]
+                0.00    0.00       1/1           std::vector<Range, std::allocator<Range> >::vector() [146]
+-----------------------------------------------
+                0.00    0.19       1/1           main [1]
+[30]     1.6    0.00    0.19       1         std::_MakeUniq<Interconnect>::__single_object std::make_unique<Interconnect>() [30]
+                0.00    0.19       1/1           Interconnect::Interconnect() [29]
+                0.00    0.00       1/1           std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::unique_ptr<std::default_delete<Interconnect>, void>(Interconnect*) [134]
+-----------------------------------------------
+                0.13    0.04      17/17          Interconnect::Interconnect() [29]
+[31]     1.5    0.13    0.04      17         std::vector<Range, std::allocator<Range> >::push_back(Range const&) [31]
+                0.04    0.00       6/6           void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [51]
+                0.00    0.00      11/17          void std::allocator_traits<std::allocator<Range> >::construct<Range, Range const&>(std::allocator<Range>&, Range*, Range const&) [101]
+                0.00    0.00       6/6           std::vector<Range, std::allocator<Range> >::end() [117]
+-----------------------------------------------
+                0.09    0.08 100000000/100000000     bool std::operator!=<Range>(std::optional<Range> const&, std::nullopt_t) [28]
+[32]     1.5    0.09    0.08 100000000         std::optional<Range>::operator bool() const [32]
+                0.08    0.00 100000000/100000000     std::_Optional_base<Range>::_M_is_engaged() const [47]
+-----------------------------------------------
+                0.16    0.00 200000000/200000000     std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [14]
+[33]     1.4    0.16    0.00 200000000         std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [33]
+-----------------------------------------------
+                0.07    0.09 100000000/100000000     Interconnect* const& std::__get_helper<0ul, Interconnect*, std::default_delete<Interconnect> >(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> > const&) [27]
+[34]     1.3    0.07    0.09 100000000         std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> > const&) [34]
+                0.09    0.00 100000000/100000000     std::_Head_base<0ul, Interconnect*, false>::_M_head(std::_Head_base<0ul, Interconnect*, false> const&) [46]
+-----------------------------------------------
+                0.06    0.09 100000000/100000000     std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int) [9]
+[35]     1.3    0.06    0.09 100000000         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::c_str() const [35]
+                0.09    0.00 100000000/100000004     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data() const [45]
+-----------------------------------------------
+                0.14    0.00 99506637/99506637     std::_Optional_base<Range>::_Optional_base(std::nullopt_t) [23]
+[36]     1.2    0.14    0.00 99506637         std::_Optional_payload<Range, false, false>::_Optional_payload() [36]
+-----------------------------------------------
+                0.00    0.13       1/1           main [1]
+[37]     1.1    0.00    0.13       1         std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::~unique_ptr() [37]
+                0.00    0.12       1/1           std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::get_deleter() [39]
+                0.00    0.01       1/1           std::default_delete<Interconnect>::operator()(Interconnect*) const [58]
+                0.00    0.00       1/2           std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_ptr() [122]
+-----------------------------------------------
+                0.12    0.00 100000000/100000000     int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [10]
+[38]     1.0    0.12    0.00 100000000         __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::~_Save_errno() [38]
+-----------------------------------------------
+                0.00    0.12       1/1           std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::~unique_ptr() [37]
+[39]     1.0    0.00    0.12       1         std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::get_deleter() [39]
+                0.04    0.08       1/1           std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_deleter() [40]
+-----------------------------------------------
+                0.04    0.08       1/1           std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::get_deleter() [39]
+[40]     1.0    0.04    0.08       1         std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_deleter() [40]
+                0.01    0.07       1/1           std::tuple_element<1ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type& std::get<1ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> >&) [49]
+-----------------------------------------------
+                0.11    0.00 100000000/100000000     int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [10]
+[41]     0.9    0.11    0.00 100000000         __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Range_chk::_S_chk(long, std::integral_constant<bool, true>) [41]
+-----------------------------------------------
+                0.11    0.00 100000000/100000000     int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [10]
+[42]     0.9    0.11    0.00 100000000         __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::_Save_errno() [42]
+-----------------------------------------------
+                0.10    0.00 200000000/200000000     std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [6]
+[43]     0.8    0.10    0.00 200000000         std::operator~(std::_Ios_Fmtflags) [43]
+-----------------------------------------------
+                0.02    0.08  493363/493363      Interconnect::binarySearch(unsigned int, std::vector<Range, std::allocator<Range> > const*, unsigned int, unsigned int) const [3]
+[44]     0.8    0.02    0.08  493363         std::optional<Range>::optional<Range&, true>(Range&) [44]
+                0.08    0.00  493363/493363      std::_Optional_base<Range>::_Optional_base<Range&, false>(std::in_place_t, Range&) [48]
+                0.00    0.00  493363/1480089     Range& std::forward<Range&>(std::remove_reference<Range&>::type&) [80]
+-----------------------------------------------
+                0.00    0.00       1/100000004     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_set_length(unsigned long) [59]
+                0.00    0.00       1/100000004     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_destroy(unsigned long) [73]
+                0.00    0.00       2/100000004     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_is_local() const [63]
+                0.09    0.00 100000000/100000004     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::c_str() const [35]
+[45]     0.8    0.09    0.00 100000004         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data() const [45]
+-----------------------------------------------
+                0.09    0.00 100000000/100000000     std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> > const&) [34]
+[46]     0.7    0.09    0.00 100000000         std::_Head_base<0ul, Interconnect*, false>::_M_head(std::_Head_base<0ul, Interconnect*, false> const&) [46]
+-----------------------------------------------
+                0.08    0.00 100000000/100000000     std::optional<Range>::operator bool() const [32]
+[47]     0.7    0.08    0.00 100000000         std::_Optional_base<Range>::_M_is_engaged() const [47]
+-----------------------------------------------
+                0.08    0.00  493363/493363      std::optional<Range>::optional<Range&, true>(Range&) [44]
+[48]     0.7    0.08    0.00  493363         std::_Optional_base<Range>::_Optional_base<Range&, false>(std::in_place_t, Range&) [48]
+                0.00    0.00  493363/1480089     Range& std::forward<Range&>(std::remove_reference<Range&>::type&) [80]
+                0.00    0.00  493363/493363      std::_Optional_payload<Range, false, false>::_Optional_payload<Range&>(std::in_place_t, Range&) [84]
+-----------------------------------------------
+                0.01    0.07       1/1           std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_deleter() [40]
+[49]     0.6    0.01    0.07       1         std::tuple_element<1ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type& std::get<1ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> >&) [49]
+                0.03    0.04       1/1           std::default_delete<Interconnect>& std::__get_helper<1ul, std::default_delete<Interconnect>>(std::_Tuple_impl<1ul, std::default_delete<Interconnect>>&) [50]
+-----------------------------------------------
+                0.03    0.04       1/1           std::tuple_element<1ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type& std::get<1ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> >&) [49]
+[50]     0.6    0.03    0.04       1         std::default_delete<Interconnect>& std::__get_helper<1ul, std::default_delete<Interconnect>>(std::_Tuple_impl<1ul, std::default_delete<Interconnect>>&) [50]
+                0.00    0.04       1/1           std::_Tuple_impl<1ul, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Interconnect> >&) [53]
+-----------------------------------------------
+                0.04    0.00       6/6           std::vector<Range, std::allocator<Range> >::push_back(Range const&) [31]
+[51]     0.3    0.04    0.00       6         void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [51]
+                0.00    0.00       6/7           void std::_Destroy<Range*, Range>(Range*, Range*, std::allocator<Range>&) [70]
+                0.00    0.00       6/6           std::vector<Range, std::allocator<Range> >::_M_check_len(unsigned long, char const*) const [71]
+                0.00    0.00      18/19          std::_Vector_base<Range, std::allocator<Range> >::_M_get_Tp_allocator() [98]
+                0.00    0.00      12/24          __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::base() const [95]
+                0.00    0.00      12/12          Range* std::__uninitialized_move_if_noexcept_a<Range*, Range*, std::allocator<Range> >(Range*, Range*, Range*, std::allocator<Range>&) [109]
+                0.00    0.00       6/6           std::vector<Range, std::allocator<Range> >::begin() [118]
+                0.00    0.00       6/6           __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::difference_type __gnu_cxx::operator-<Range*, std::vector<Range, std::allocator<Range> > >(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > > const&, __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > > const&) [113]
+                0.00    0.00       6/6           std::_Vector_base<Range, std::allocator<Range> >::_M_allocate(unsigned long) [114]
+                0.00    0.00       6/40          Range const& std::forward<Range const&>(std::remove_reference<Range const&>::type&) [90]
+                0.00    0.00       6/17          void std::allocator_traits<std::allocator<Range> >::construct<Range, Range const&>(std::allocator<Range>&, Range*, Range const&) [101]
+                0.00    0.00       6/7           std::_Vector_base<Range, std::allocator<Range> >::_M_deallocate(Range*, unsigned long) [110]
+-----------------------------------------------
+                0.04    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Interconnect> >&) [53]
+[52]     0.3    0.04    0.00       1         std::_Head_base<1ul, std::default_delete<Interconnect>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Interconnect>, true>&) [52]
+-----------------------------------------------
+                0.00    0.04       1/1           std::default_delete<Interconnect>& std::__get_helper<1ul, std::default_delete<Interconnect>>(std::_Tuple_impl<1ul, std::default_delete<Interconnect>>&) [50]
+[53]     0.3    0.00    0.04       1         std::_Tuple_impl<1ul, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Interconnect> >&) [53]
+                0.04    0.00       1/1           std::_Head_base<1ul, std::default_delete<Interconnect>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Interconnect>, true>&) [52]
+-----------------------------------------------
+                0.02    0.01       1/1           main [1]
+[54]     0.3    0.02    0.01       1         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string() [54]
+                0.01    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_set_length(unsigned long) [59]
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data() [148]
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::_Alloc_hider(char*, std::allocator<char>&&) [147]
+-----------------------------------------------
+                0.02    0.00      17/17          Interconnect::Interconnect() [29]
+[55]     0.2    0.02    0.00      17         Range::Range(unsigned int, unsigned int) [55]
+-----------------------------------------------
+                0.02    0.00       2/2           main [1]
+[56]     0.1    0.02    0.00       2         std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) [56]
+-----------------------------------------------
+                0.01    0.00       1/1           std::default_delete<Interconnect>::operator()(Interconnect*) const [58]
+[57]     0.1    0.01    0.00       1         Interconnect::~Interconnect() [57]
+                0.00    0.00       1/1           std::vector<Range, std::allocator<Range> >::~vector() [72]
+-----------------------------------------------
+                0.00    0.01       1/1           std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::~unique_ptr() [37]
+[58]     0.1    0.00    0.01       1         std::default_delete<Interconnect>::operator()(Interconnect*) const [58]
+                0.01    0.00       1/1           Interconnect::~Interconnect() [57]
+-----------------------------------------------
+                0.01    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string() [54]
+[59]     0.1    0.01    0.00       1         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_set_length(unsigned long) [59]
+                0.00    0.00       1/100000004     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data() const [45]
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_length(unsigned long) [150]
+                0.00    0.00       1/1           std::char_traits<char>::assign(char&, char const&) [137]
+-----------------------------------------------
+                                                 <spontaneous>
+[60]     0.1    0.01    0.00                 void std::allocator_traits<std::allocator<Range> >::destroy<Range>(std::allocator<Range>&, Range*) [60]
+-----------------------------------------------
+                0.00    0.01       2/2           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [62]
+[61]     0.0    0.00    0.01       2         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose() [61]
+                0.00    0.01       2/2           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_is_local() const [63]
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_destroy(unsigned long) [73]
+-----------------------------------------------
+                0.00    0.01       2/2           main [1]
+[62]     0.0    0.00    0.01       2         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [62]
+                0.00    0.01       2/2           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose() [61]
+                0.00    0.00       2/2           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::~_Alloc_hider() [123]
+-----------------------------------------------
+                0.00    0.01       2/2           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose() [61]
+[63]     0.0    0.00    0.01       2         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_is_local() const [63]
+                0.00    0.01       2/2           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data() const [64]
+                0.00    0.00       2/100000004     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data() const [45]
+-----------------------------------------------
+                0.00    0.01       2/2           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_is_local() const [63]
+[64]     0.0    0.00    0.01       2         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data() const [64]
+                0.00    0.01       2/2           std::pointer_traits<char const*>::pointer_to(char const&) [65]
+-----------------------------------------------
+                0.00    0.01       2/2           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data() const [64]
+[65]     0.0    0.00    0.01       2         std::pointer_traits<char const*>::pointer_to(char const&) [65]
+                0.01    0.00       2/2           char const* std::addressof<char const>(char const&) [66]
+-----------------------------------------------
+                0.01    0.00       2/2           std::pointer_traits<char const*>::pointer_to(char const&) [65]
+[66]     0.0    0.01    0.00       2         char const* std::addressof<char const>(char const&) [66]
+                0.00    0.00       2/2           char const* std::__addressof<char const>(char const&) [124]
+-----------------------------------------------
+                0.00    0.00      48/48          void std::_Destroy_aux<false>::__destroy<Range*>(Range*, Range*) [68]
+[67]     0.0    0.00    0.00      48         void std::_Destroy<Range>(Range*) [67]
+                0.00    0.00      48/500393728     Range::~Range() [13]
+-----------------------------------------------
+                0.00    0.00       7/7           void std::_Destroy<Range*>(Range*, Range*) [69]
+[68]     0.0    0.00    0.00       7         void std::_Destroy_aux<false>::__destroy<Range*>(Range*, Range*) [68]
+                0.00    0.00      48/48          void std::_Destroy<Range>(Range*) [67]
+                0.00    0.00      48/79          Range* std::__addressof<Range>(Range&) [86]
+-----------------------------------------------
+                0.00    0.00       7/7           void std::_Destroy<Range*, Range>(Range*, Range*, std::allocator<Range>&) [70]
+[69]     0.0    0.00    0.00       7         void std::_Destroy<Range*>(Range*, Range*) [69]
+                0.00    0.00       7/7           void std::_Destroy_aux<false>::__destroy<Range*>(Range*, Range*) [68]
+-----------------------------------------------
+                0.00    0.00       1/7           std::vector<Range, std::allocator<Range> >::~vector() [72]
+                0.00    0.00       6/7           void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [51]
+[70]     0.0    0.00    0.00       7         void std::_Destroy<Range*, Range>(Range*, Range*, std::allocator<Range>&) [70]
+                0.00    0.00       7/7           void std::_Destroy<Range*>(Range*, Range*) [69]
+-----------------------------------------------
+                0.00    0.00       6/6           void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [51]
+[71]     0.0    0.00    0.00       6         std::vector<Range, std::allocator<Range> >::_M_check_len(unsigned long, char const*) const [71]
+                0.00    0.00      24/1099800624     std::vector<Range, std::allocator<Range> >::size() const [7]
+                0.00    0.00      12/12          std::vector<Range, std::allocator<Range> >::max_size() const [104]
+                0.00    0.00       6/6           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [119]
+-----------------------------------------------
+                0.00    0.00       1/1           Interconnect::~Interconnect() [57]
+[72]     0.0    0.00    0.00       1         std::vector<Range, std::allocator<Range> >::~vector() [72]
+                0.00    0.00       1/7           void std::_Destroy<Range*, Range>(Range*, Range*, std::allocator<Range>&) [70]
+                0.00    0.00       1/19          std::_Vector_base<Range, std::allocator<Range> >::_M_get_Tp_allocator() [98]
+                0.00    0.00       1/1           std::_Vector_base<Range, std::allocator<Range> >::~_Vector_base() [141]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose() [61]
+[73]     0.0    0.00    0.00       1         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_destroy(unsigned long) [73]
+                0.00    0.00       1/100000004     std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data() const [45]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<char> >::deallocate(std::allocator<char>&, char*, unsigned long) [144]
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_get_allocator() [149]
+-----------------------------------------------
+                0.00    0.00  493363/1480089     std::optional<Range>::optional<Range&, true>(Range&) [44]
+                0.00    0.00  493363/1480089     std::_Optional_payload<Range, false, false>::_Optional_payload<Range&>(std::in_place_t, Range&) [84]
+                0.00    0.00  493363/1480089     std::_Optional_base<Range>::_Optional_base<Range&, false>(std::in_place_t, Range&) [48]
+[80]     0.0    0.00    0.00 1480089         Range& std::forward<Range&>(std::remove_reference<Range&>::type&) [80]
+-----------------------------------------------
+                0.00    0.00  493363/493363      Interconnect::load(unsigned int) const [2]
+[81]     0.0    0.00    0.00  493363         Range::offset(unsigned int) const [81]
+-----------------------------------------------
+                0.00    0.00  493363/493363      Interconnect::load(unsigned int) const [2]
+[82]     0.0    0.00    0.00  493363         std::optional<Range>::operator*() & [82]
+                0.00    0.00  493363/493363      std::_Optional_base<Range>::_M_get() [83]
+-----------------------------------------------
+                0.00    0.00  493363/493363      std::optional<Range>::operator*() & [82]
+[83]     0.0    0.00    0.00  493363         std::_Optional_base<Range>::_M_get() [83]
+-----------------------------------------------
+                0.00    0.00  493363/493363      std::_Optional_base<Range>::_Optional_base<Range&, false>(std::in_place_t, Range&) [48]
+[84]     0.0    0.00    0.00  493363         std::_Optional_payload<Range, false, false>::_Optional_payload<Range&>(std::in_place_t, Range&) [84]
+                0.00    0.00  493363/1480089     Range& std::forward<Range&>(std::remove_reference<Range&>::type&) [80]
+-----------------------------------------------
+                0.00    0.00      86/86          bool std::operator==<Range*>(std::move_iterator<Range*> const&, std::move_iterator<Range*> const&) [88]
+[85]     0.0    0.00    0.00      86         std::move_iterator<Range*>::base() const [85]
+-----------------------------------------------
+                0.00    0.00      31/79          Range* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*) [106]
+                0.00    0.00      48/79          void std::_Destroy_aux<false>::__destroy<Range*>(Range*, Range*) [68]
+[86]     0.0    0.00    0.00      79         Range* std::__addressof<Range>(Range&) [86]
+-----------------------------------------------
+                0.00    0.00      17/48          void __gnu_cxx::new_allocator<Range>::construct<Range, Range const&>(Range*, Range const&) [100]
+                0.00    0.00      31/48          void std::_Construct<Range, Range>(Range*, Range&&) [93]
+[87]     0.0    0.00    0.00      48         operator new(unsigned long, void*) [87]
+-----------------------------------------------
+                0.00    0.00      43/43          bool std::operator!=<Range*>(std::move_iterator<Range*> const&, std::move_iterator<Range*> const&) [89]
+[88]     0.0    0.00    0.00      43         bool std::operator==<Range*>(std::move_iterator<Range*> const&, std::move_iterator<Range*> const&) [88]
+                0.00    0.00      86/86          std::move_iterator<Range*>::base() const [85]
+-----------------------------------------------
+                0.00    0.00      43/43          Range* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*) [106]
+[89]     0.0    0.00    0.00      43         bool std::operator!=<Range*>(std::move_iterator<Range*> const&, std::move_iterator<Range*> const&) [89]
+                0.00    0.00      43/43          bool std::operator==<Range*>(std::move_iterator<Range*> const&, std::move_iterator<Range*> const&) [88]
+-----------------------------------------------
+                0.00    0.00       6/40          void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [51]
+                0.00    0.00      17/40          void std::allocator_traits<std::allocator<Range> >::construct<Range, Range const&>(std::allocator<Range>&, Range*, Range const&) [101]
+                0.00    0.00      17/40          void __gnu_cxx::new_allocator<Range>::construct<Range, Range const&>(Range*, Range const&) [100]
+[90]     0.0    0.00    0.00      40         Range const& std::forward<Range const&>(std::remove_reference<Range const&>::type&) [90]
+-----------------------------------------------
+                0.00    0.00      31/31          Range* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*) [106]
+[91]     0.0    0.00    0.00      31         std::move_iterator<Range*>::operator*() const [91]
+-----------------------------------------------
+                0.00    0.00      31/31          Range* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*) [106]
+[92]     0.0    0.00    0.00      31         std::move_iterator<Range*>::operator++() [92]
+-----------------------------------------------
+                0.00    0.00      31/31          Range* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*) [106]
+[93]     0.0    0.00    0.00      31         void std::_Construct<Range, Range>(Range*, Range&&) [93]
+                0.00    0.00      31/31          Range&& std::forward<Range>(std::remove_reference<Range>::type&) [94]
+                0.00    0.00      31/48          operator new(unsigned long, void*) [87]
+-----------------------------------------------
+                0.00    0.00      31/31          void std::_Construct<Range, Range>(Range*, Range&&) [93]
+[94]     0.0    0.00    0.00      31         Range&& std::forward<Range>(std::remove_reference<Range>::type&) [94]
+-----------------------------------------------
+                0.00    0.00      12/24          void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [51]
+                0.00    0.00      12/24          __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::difference_type __gnu_cxx::operator-<Range*, std::vector<Range, std::allocator<Range> > >(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > > const&, __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > > const&) [113]
+[95]     0.0    0.00    0.00      24         __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::base() const [95]
+-----------------------------------------------
+                0.00    0.00      24/24          std::move_iterator<Range*> std::__make_move_if_noexcept_iterator<Range, std::move_iterator<Range*> >(Range*) [97]
+[96]     0.0    0.00    0.00      24         std::move_iterator<Range*>::move_iterator(Range*) [96]
+-----------------------------------------------
+                0.00    0.00      24/24          Range* std::__uninitialized_move_if_noexcept_a<Range*, Range*, std::allocator<Range> >(Range*, Range*, Range*, std::allocator<Range>&) [109]
+[97]     0.0    0.00    0.00      24         std::move_iterator<Range*> std::__make_move_if_noexcept_iterator<Range, std::move_iterator<Range*> >(Range*) [97]
+                0.00    0.00      24/24          std::move_iterator<Range*>::move_iterator(Range*) [96]
+-----------------------------------------------
+                0.00    0.00       1/19          std::vector<Range, std::allocator<Range> >::~vector() [72]
+                0.00    0.00      18/19          void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [51]
+[98]     0.0    0.00    0.00      19         std::_Vector_base<Range, std::allocator<Range> >::_M_get_Tp_allocator() [98]
+-----------------------------------------------
+                0.00    0.00       6/18          __gnu_cxx::new_allocator<Range>::allocate(unsigned long, void const*) [112]
+                0.00    0.00      12/18          std::allocator_traits<std::allocator<Range> >::max_size(std::allocator<Range> const&) [105]
+[99]     0.0    0.00    0.00      18         __gnu_cxx::new_allocator<Range>::max_size() const [99]
+-----------------------------------------------
+                0.00    0.00      17/17          void std::allocator_traits<std::allocator<Range> >::construct<Range, Range const&>(std::allocator<Range>&, Range*, Range const&) [101]
+[100]    0.0    0.00    0.00      17         void __gnu_cxx::new_allocator<Range>::construct<Range, Range const&>(Range*, Range const&) [100]
+                0.00    0.00      17/40          Range const& std::forward<Range const&>(std::remove_reference<Range const&>::type&) [90]
+                0.00    0.00      17/48          operator new(unsigned long, void*) [87]
+-----------------------------------------------
+                0.00    0.00       6/17          void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [51]
+                0.00    0.00      11/17          std::vector<Range, std::allocator<Range> >::push_back(Range const&) [31]
+[101]    0.0    0.00    0.00      17         void std::allocator_traits<std::allocator<Range> >::construct<Range, Range const&>(std::allocator<Range>&, Range*, Range const&) [101]
+                0.00    0.00      17/40          Range const& std::forward<Range const&>(std::remove_reference<Range const&>::type&) [90]
+                0.00    0.00      17/17          void __gnu_cxx::new_allocator<Range>::construct<Range, Range const&>(Range*, Range const&) [100]
+-----------------------------------------------
+                0.00    0.00       6/12          std::vector<Range, std::allocator<Range> >::end() [117]
+                0.00    0.00       6/12          std::vector<Range, std::allocator<Range> >::begin() [118]
+[102]    0.0    0.00    0.00      12         __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::__normal_iterator(Range* const&) [102]
+-----------------------------------------------
+                0.00    0.00      12/12          std::vector<Range, std::allocator<Range> >::max_size() const [104]
+[103]    0.0    0.00    0.00      12         std::_Vector_base<Range, std::allocator<Range> >::_M_get_Tp_allocator() const [103]
+-----------------------------------------------
+                0.00    0.00      12/12          std::vector<Range, std::allocator<Range> >::_M_check_len(unsigned long, char const*) const [71]
+[104]    0.0    0.00    0.00      12         std::vector<Range, std::allocator<Range> >::max_size() const [104]
+                0.00    0.00      12/12          std::_Vector_base<Range, std::allocator<Range> >::_M_get_Tp_allocator() const [103]
+                0.00    0.00      12/12          std::allocator_traits<std::allocator<Range> >::max_size(std::allocator<Range> const&) [105]
+-----------------------------------------------
+                0.00    0.00      12/12          std::vector<Range, std::allocator<Range> >::max_size() const [104]
+[105]    0.0    0.00    0.00      12         std::allocator_traits<std::allocator<Range> >::max_size(std::allocator<Range> const&) [105]
+                0.00    0.00      12/18          __gnu_cxx::new_allocator<Range>::max_size() const [99]
+-----------------------------------------------
+                0.00    0.00      12/12          Range* std::uninitialized_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*) [107]
+[106]    0.0    0.00    0.00      12         Range* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*) [106]
+                0.00    0.00      43/43          bool std::operator!=<Range*>(std::move_iterator<Range*> const&, std::move_iterator<Range*> const&) [89]
+                0.00    0.00      31/31          std::move_iterator<Range*>::operator*() const [91]
+                0.00    0.00      31/31          void std::_Construct<Range, Range>(Range*, Range&&) [93]
+                0.00    0.00      31/79          Range* std::__addressof<Range>(Range&) [86]
+                0.00    0.00      31/31          std::move_iterator<Range*>::operator++() [92]
+-----------------------------------------------
+                0.00    0.00      12/12          Range* std::__uninitialized_copy_a<std::move_iterator<Range*>, Range*, Range>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*, std::allocator<Range>&) [108]
+[107]    0.0    0.00    0.00      12         Range* std::uninitialized_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*) [107]
+                0.00    0.00      12/12          Range* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*) [106]
+-----------------------------------------------
+                0.00    0.00      12/12          Range* std::__uninitialized_move_if_noexcept_a<Range*, Range*, std::allocator<Range> >(Range*, Range*, Range*, std::allocator<Range>&) [109]
+[108]    0.0    0.00    0.00      12         Range* std::__uninitialized_copy_a<std::move_iterator<Range*>, Range*, Range>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*, std::allocator<Range>&) [108]
+                0.00    0.00      12/12          Range* std::uninitialized_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*) [107]
+-----------------------------------------------
+                0.00    0.00      12/12          void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [51]
+[109]    0.0    0.00    0.00      12         Range* std::__uninitialized_move_if_noexcept_a<Range*, Range*, std::allocator<Range> >(Range*, Range*, Range*, std::allocator<Range>&) [109]
+                0.00    0.00      24/24          std::move_iterator<Range*> std::__make_move_if_noexcept_iterator<Range, std::move_iterator<Range*> >(Range*) [97]
+                0.00    0.00      12/12          Range* std::__uninitialized_copy_a<std::move_iterator<Range*>, Range*, Range>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*, std::allocator<Range>&) [108]
+-----------------------------------------------
+                0.00    0.00       1/7           std::_Vector_base<Range, std::allocator<Range> >::~_Vector_base() [141]
+                0.00    0.00       6/7           void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [51]
+[110]    0.0    0.00    0.00       7         std::_Vector_base<Range, std::allocator<Range> >::_M_deallocate(Range*, unsigned long) [110]
+                0.00    0.00       6/6           std::allocator_traits<std::allocator<Range> >::deallocate(std::allocator<Range>&, Range*, unsigned long) [115]
+-----------------------------------------------
+                0.00    0.00       6/6           std::allocator_traits<std::allocator<Range> >::deallocate(std::allocator<Range>&, Range*, unsigned long) [115]
+[111]    0.0    0.00    0.00       6         __gnu_cxx::new_allocator<Range>::deallocate(Range*, unsigned long) [111]
+-----------------------------------------------
+                0.00    0.00       6/6           std::allocator_traits<std::allocator<Range> >::allocate(std::allocator<Range>&, unsigned long) [116]
+[112]    0.0    0.00    0.00       6         __gnu_cxx::new_allocator<Range>::allocate(unsigned long, void const*) [112]
+                0.00    0.00       6/18          __gnu_cxx::new_allocator<Range>::max_size() const [99]
+-----------------------------------------------
+                0.00    0.00       6/6           void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [51]
+[113]    0.0    0.00    0.00       6         __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::difference_type __gnu_cxx::operator-<Range*, std::vector<Range, std::allocator<Range> > >(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > > const&, __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > > const&) [113]
+                0.00    0.00      12/24          __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::base() const [95]
+-----------------------------------------------
+                0.00    0.00       6/6           void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [51]
+[114]    0.0    0.00    0.00       6         std::_Vector_base<Range, std::allocator<Range> >::_M_allocate(unsigned long) [114]
+                0.00    0.00       6/6           std::allocator_traits<std::allocator<Range> >::allocate(std::allocator<Range>&, unsigned long) [116]
+-----------------------------------------------
+                0.00    0.00       6/6           std::_Vector_base<Range, std::allocator<Range> >::_M_deallocate(Range*, unsigned long) [110]
+[115]    0.0    0.00    0.00       6         std::allocator_traits<std::allocator<Range> >::deallocate(std::allocator<Range>&, Range*, unsigned long) [115]
+                0.00    0.00       6/6           __gnu_cxx::new_allocator<Range>::deallocate(Range*, unsigned long) [111]
+-----------------------------------------------
+                0.00    0.00       6/6           std::_Vector_base<Range, std::allocator<Range> >::_M_allocate(unsigned long) [114]
+[116]    0.0    0.00    0.00       6         std::allocator_traits<std::allocator<Range> >::allocate(std::allocator<Range>&, unsigned long) [116]
+                0.00    0.00       6/6           __gnu_cxx::new_allocator<Range>::allocate(unsigned long, void const*) [112]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<Range, std::allocator<Range> >::push_back(Range const&) [31]
+[117]    0.0    0.00    0.00       6         std::vector<Range, std::allocator<Range> >::end() [117]
+                0.00    0.00       6/12          __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::__normal_iterator(Range* const&) [102]
+-----------------------------------------------
+                0.00    0.00       6/6           void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [51]
+[118]    0.0    0.00    0.00       6         std::vector<Range, std::allocator<Range> >::begin() [118]
+                0.00    0.00       6/12          __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::__normal_iterator(Range* const&) [102]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<Range, std::allocator<Range> >::_M_check_len(unsigned long, char const*) const [71]
+[119]    0.0    0.00    0.00       6         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [119]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >&) [121]
+[120]    0.0    0.00    0.00       2         std::_Head_base<0ul, Interconnect*, false>::_M_head(std::_Head_base<0ul, Interconnect*, false>&) [120]
+-----------------------------------------------
+                0.00    0.00       2/2           Interconnect*& std::__get_helper<0ul, Interconnect*, std::default_delete<Interconnect> >(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >&) [125]
+[121]    0.0    0.00    0.00       2         std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >&) [121]
+                0.00    0.00       2/2           std::_Head_base<0ul, Interconnect*, false>::_M_head(std::_Head_base<0ul, Interconnect*, false>&) [120]
+-----------------------------------------------
+                0.00    0.00       1/2           std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::~unique_ptr() [37]
+                0.00    0.00       1/2           std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::__uniq_ptr_impl(Interconnect*) [143]
+[122]    0.0    0.00    0.00       2         std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_ptr() [122]
+                0.00    0.00       2/2           std::tuple_element<0ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type& std::get<0ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> >&) [126]
+-----------------------------------------------
+                0.00    0.00       2/2           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [62]
+[123]    0.0    0.00    0.00       2         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::~_Alloc_hider() [123]
+-----------------------------------------------
+                0.00    0.00       2/2           char const* std::addressof<char const>(char const&) [66]
+[124]    0.0    0.00    0.00       2         char const* std::__addressof<char const>(char const&) [124]
+-----------------------------------------------
+                0.00    0.00       2/2           std::tuple_element<0ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type& std::get<0ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> >&) [126]
+[125]    0.0    0.00    0.00       2         Interconnect*& std::__get_helper<0ul, Interconnect*, std::default_delete<Interconnect> >(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >&) [125]
+                0.00    0.00       2/2           std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >&) [121]
+-----------------------------------------------
+                0.00    0.00       2/2           std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_ptr() [122]
+[126]    0.0    0.00    0.00       2         std::tuple_element<0ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type& std::get<0ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> >&) [126]
+                0.00    0.00       2/2           Interconnect*& std::__get_helper<0ul, Interconnect*, std::default_delete<Interconnect> >(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >&) [125]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<Range>::allocator() [130]
+[127]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<Range>::new_allocator() [127]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<Range>::~allocator() [131]
+[128]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<Range>::~new_allocator() [128]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<char> >::deallocate(std::allocator<char>&, char*, unsigned long) [144]
+[129]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<char>::deallocate(char*, unsigned long) [129]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Range, std::allocator<Range> >::_Vector_impl::_Vector_impl() [138]
+[130]    0.0    0.00    0.00       1         std::allocator<Range>::allocator() [130]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<Range>::new_allocator() [127]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Range, std::allocator<Range> >::_Vector_impl::~_Vector_impl() [139]
+[131]    0.0    0.00    0.00       1         std::allocator<Range>::~allocator() [131]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<Range>::~new_allocator() [128]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_Tuple_impl() [135]
+[132]    0.0    0.00    0.00       1         std::_Head_base<0ul, Interconnect*, false>::_Head_base() [132]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<Interconnect> >::_Tuple_impl() [136]
+[133]    0.0    0.00    0.00       1         std::_Head_base<1ul, std::default_delete<Interconnect>, true>::_Head_base() [133]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_MakeUniq<Interconnect>::__single_object std::make_unique<Interconnect>() [30]
+[134]    0.0    0.00    0.00       1         std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::unique_ptr<std::default_delete<Interconnect>, void>(Interconnect*) [134]
+                0.00    0.00       1/1           std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::__uniq_ptr_impl(Interconnect*) [143]
+-----------------------------------------------
+                0.00    0.00       1/1           std::tuple<Interconnect*, std::default_delete<Interconnect> >::tuple<Interconnect*, std::default_delete<Interconnect>, true>() [145]
+[135]    0.0    0.00    0.00       1         std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_Tuple_impl() [135]
+                0.00    0.00       1/1           std::_Head_base<0ul, Interconnect*, false>::_Head_base() [132]
+                0.00    0.00       1/1           std::_Tuple_impl<1ul, std::default_delete<Interconnect> >::_Tuple_impl() [136]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_Tuple_impl() [135]
+[136]    0.0    0.00    0.00       1         std::_Tuple_impl<1ul, std::default_delete<Interconnect> >::_Tuple_impl() [136]
+                0.00    0.00       1/1           std::_Head_base<1ul, std::default_delete<Interconnect>, true>::_Head_base() [133]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_set_length(unsigned long) [59]
+[137]    0.0    0.00    0.00       1         std::char_traits<char>::assign(char&, char const&) [137]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Range, std::allocator<Range> >::_Vector_base() [140]
+[138]    0.0    0.00    0.00       1         std::_Vector_base<Range, std::allocator<Range> >::_Vector_impl::_Vector_impl() [138]
+                0.00    0.00       1/1           std::allocator<Range>::allocator() [130]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Range, std::allocator<Range> >::~_Vector_base() [141]
+[139]    0.0    0.00    0.00       1         std::_Vector_base<Range, std::allocator<Range> >::_Vector_impl::~_Vector_impl() [139]
+                0.00    0.00       1/1           std::allocator<Range>::~allocator() [131]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Range, std::allocator<Range> >::vector() [146]
+[140]    0.0    0.00    0.00       1         std::_Vector_base<Range, std::allocator<Range> >::_Vector_base() [140]
+                0.00    0.00       1/1           std::_Vector_base<Range, std::allocator<Range> >::_Vector_impl::_Vector_impl() [138]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Range, std::allocator<Range> >::~vector() [72]
+[141]    0.0    0.00    0.00       1         std::_Vector_base<Range, std::allocator<Range> >::~_Vector_base() [141]
+                0.00    0.00       1/7           std::_Vector_base<Range, std::allocator<Range> >::_M_deallocate(Range*, unsigned long) [110]
+                0.00    0.00       1/1           std::_Vector_base<Range, std::allocator<Range> >::_Vector_impl::~_Vector_impl() [139]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data() [148]
+[142]    0.0    0.00    0.00       1         std::pointer_traits<char*>::pointer_to(char&) [142]
+                0.00    0.00       1/1           char* std::addressof<char>(char&) [153]
+-----------------------------------------------
+                0.00    0.00       1/1           std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::unique_ptr<std::default_delete<Interconnect>, void>(Interconnect*) [134]
+[143]    0.0    0.00    0.00       1         std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::__uniq_ptr_impl(Interconnect*) [143]
+                0.00    0.00       1/1           std::tuple<Interconnect*, std::default_delete<Interconnect> >::tuple<Interconnect*, std::default_delete<Interconnect>, true>() [145]
+                0.00    0.00       1/2           std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_ptr() [122]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_destroy(unsigned long) [73]
+[144]    0.0    0.00    0.00       1         std::allocator_traits<std::allocator<char> >::deallocate(std::allocator<char>&, char*, unsigned long) [144]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<char>::deallocate(char*, unsigned long) [129]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::__uniq_ptr_impl(Interconnect*) [143]
+[145]    0.0    0.00    0.00       1         std::tuple<Interconnect*, std::default_delete<Interconnect> >::tuple<Interconnect*, std::default_delete<Interconnect>, true>() [145]
+                0.00    0.00       1/1           std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_Tuple_impl() [135]
+-----------------------------------------------
+                0.00    0.00       1/1           Interconnect::Interconnect() [29]
+[146]    0.0    0.00    0.00       1         std::vector<Range, std::allocator<Range> >::vector() [146]
+                0.00    0.00       1/1           std::_Vector_base<Range, std::allocator<Range> >::_Vector_base() [140]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string() [54]
+[147]    0.0    0.00    0.00       1         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::_Alloc_hider(char*, std::allocator<char>&&) [147]
+                0.00    0.00       1/1           std::remove_reference<std::allocator<char>&>::type&& std::move<std::allocator<char>&>(std::allocator<char>&) [152]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string() [54]
+[148]    0.0    0.00    0.00       1         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data() [148]
+                0.00    0.00       1/1           std::pointer_traits<char*>::pointer_to(char&) [142]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_destroy(unsigned long) [73]
+[149]    0.0    0.00    0.00       1         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_get_allocator() [149]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_set_length(unsigned long) [59]
+[150]    0.0    0.00    0.00       1         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_length(unsigned long) [150]
+-----------------------------------------------
+                0.00    0.00       1/1           char* std::addressof<char>(char&) [153]
+[151]    0.0    0.00    0.00       1         char* std::__addressof<char>(char&) [151]
+-----------------------------------------------
+                0.00    0.00       1/1           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::_Alloc_hider(char*, std::allocator<char>&&) [147]
+[152]    0.0    0.00    0.00       1         std::remove_reference<std::allocator<char>&>::type&& std::move<std::allocator<char>&>(std::allocator<char>&) [152]
+-----------------------------------------------
+                0.00    0.00       1/1           std::pointer_traits<char*>::pointer_to(char&) [142]
+[153]    0.0    0.00    0.00       1         char* std::addressof<char>(char&) [153]
+                0.00    0.00       1/1           char* std::__addressof<char>(char&) [151]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [29] Interconnect::Interconnect() [37] std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::~unique_ptr() [149] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_get_allocator()
+  [57] Interconnect::~Interconnect() [34] std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> > const&) [150] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_length(unsigned long)
+  [55] Range::Range(unsigned int, unsigned int) [121] std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >&) [54] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string()
+  [13] Range::~Range()       [135] std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >::_Tuple_impl() [62] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()
+ [111] __gnu_cxx::new_allocator<Range>::deallocate(Range*, unsigned long) [53] std::_Tuple_impl<1ul, std::default_delete<Interconnect> >::_M_head(std::_Tuple_impl<1ul, std::default_delete<Interconnect> >&) [9] std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int)
+ [112] __gnu_cxx::new_allocator<Range>::allocate(unsigned long, void const*) [136] std::_Tuple_impl<1ul, std::default_delete<Interconnect> >::_Tuple_impl() [6] std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+ [100] void __gnu_cxx::new_allocator<Range>::construct<Range, Range const&>(Range*, Range const&) [137] std::char_traits<char>::assign(char&, char const&) [44] std::optional<Range>::optional<Range&, true>(Range&)
+ [127] __gnu_cxx::new_allocator<Range>::new_allocator() [68] void std::_Destroy_aux<false>::__destroy<Range*>(Range*, Range*) [21] std::optional<Range>::optional(std::nullopt_t)
+ [128] __gnu_cxx::new_allocator<Range>::~new_allocator() [114] std::_Vector_base<Range, std::allocator<Range> >::_M_allocate(unsigned long) [17] std::optional<Range>::~optional()
+ [129] __gnu_cxx::new_allocator<char>::deallocate(char*, unsigned long) [138] std::_Vector_base<Range, std::allocator<Range> >::_Vector_impl::_Vector_impl() [93] void std::_Construct<Range, Range>(Range*, Range&&)
+ [102] __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::__normal_iterator(Range* const&) [139] std::_Vector_base<Range, std::allocator<Range> >::_Vector_impl::~_Vector_impl() [86] Range* std::__addressof<Range>(Range&)
+  [10] int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [110] std::_Vector_base<Range, std::allocator<Range> >::_M_deallocate(Range*, unsigned long) [124] char const* std::__addressof<char const>(char const&)
+ [113] __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::difference_type __gnu_cxx::operator-<Range*, std::vector<Range, std::allocator<Range> > >(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > > const&, __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > > const&) [98] std::_Vector_base<Range, std::allocator<Range> >::_M_get_Tp_allocator() [151] char* std::__addressof<char>(char&)
+  [24] Interconnect::maskRegion(unsigned int) const [140] std::_Vector_base<Range, std::allocator<Range> >::_Vector_base() [30] std::_MakeUniq<Interconnect>::__single_object std::make_unique<Interconnect>()
+   [3] Interconnect::binarySearch(unsigned int, std::vector<Range, std::allocator<Range> > const*, unsigned int, unsigned int) const [141] std::_Vector_base<Range, std::allocator<Range> >::~_Vector_base() [27] Interconnect* const& std::__get_helper<0ul, Interconnect*, std::default_delete<Interconnect> >(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> > const&)
+   [2] Interconnect::load(unsigned int) const [96] std::move_iterator<Range*>::move_iterator(Range*) [125] Interconnect*& std::__get_helper<0ul, Interconnect*, std::default_delete<Interconnect> >(std::_Tuple_impl<0ul, Interconnect*, std::default_delete<Interconnect> >&)
+  [81] Range::offset(unsigned int) const [92] std::move_iterator<Range*>::operator++() [50] std::default_delete<Interconnect>& std::__get_helper<1ul, std::default_delete<Interconnect>>(std::_Tuple_impl<1ul, std::default_delete<Interconnect>>&)
+  [11] Range::contains(unsigned int) const [83] std::_Optional_base<Range>::_M_get() [107] Range* std::uninitialized_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*)
+  [99] __gnu_cxx::new_allocator<Range>::max_size() const [23] std::_Optional_base<Range>::_Optional_base(std::nullopt_t) [108] Range* std::__uninitialized_copy_a<std::move_iterator<Range*>, Range*, Range>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*, std::allocator<Range>&)
+  [95] __gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >::base() const [48] std::_Optional_base<Range>::_Optional_base<Range&, false>(std::in_place_t, Range&) [97] std::move_iterator<Range*> std::__make_move_if_noexcept_iterator<Range, std::move_iterator<Range*> >(Range*)
+  [16] std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::get() const [20] std::_Optional_base<Range>::~_Optional_base() [109] Range* std::__uninitialized_move_if_noexcept_a<Range*, Range*, std::allocator<Range> >(Range*, Range*, Range*, std::allocator<Range>&)
+  [12] std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::operator->() const [65] std::pointer_traits<char const*>::pointer_to(char const&) [5] std::dec(std::ios_base&)
+ [103] std::_Vector_base<Range, std::allocator<Range> >::_M_get_Tp_allocator() const [142] std::pointer_traits<char*>::pointer_to(char&) [22] std::tuple_element<0ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type const& std::get<0ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> > const&)
+  [85] std::move_iterator<Range*>::base() const [40] std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_deleter() [126] std::tuple_element<0ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type& std::get<0ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> >&)
+  [91] std::move_iterator<Range*>::operator*() const [122] std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_ptr() [49] std::tuple_element<1ul, std::tuple<Interconnect*, std::default_delete<Interconnect> > >::type& std::get<1ul, Interconnect*, std::default_delete<Interconnect> >(std::tuple<Interconnect*, std::default_delete<Interconnect> >&)
+  [47] std::_Optional_base<Range>::_M_is_engaged() const [143] std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::__uniq_ptr_impl(Interconnect*) [119] unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&)
+  [58] std::default_delete<Interconnect>::operator()(Interconnect*) const [115] std::allocator_traits<std::allocator<Range> >::deallocate(std::allocator<Range>&, Range*, unsigned long) [152] std::remove_reference<std::allocator<char>&>::type&& std::move<std::allocator<char>&>(std::allocator<char>&)
+  [19] std::__uniq_ptr_impl<Interconnect, std::default_delete<Interconnect> >::_M_ptr() const [60] void std::allocator_traits<std::allocator<Range> >::destroy<Range>(std::allocator<Range>&, Range*) [94] Range&& std::forward<Range>(std::remove_reference<Range>::type&)
+  [71] std::vector<Range, std::allocator<Range> >::_M_check_len(unsigned long, char const*) const [116] std::allocator_traits<std::allocator<Range> >::allocate(std::allocator<Range>&, unsigned long) [80] Range& std::forward<Range&>(std::remove_reference<Range&>::type&)
+   [8] std::vector<Range, std::allocator<Range> >::_M_range_check(unsigned long) const [105] std::allocator_traits<std::allocator<Range> >::max_size(std::allocator<Range> const&) [90] Range const& std::forward<Range const&>(std::remove_reference<Range const&>::type&)
+   [4] std::vector<Range, std::allocator<Range> >::at(unsigned long) const [101] void std::allocator_traits<std::allocator<Range> >::construct<Range, Range const&>(std::allocator<Range>&, Range*, Range const&) [67] void std::_Destroy<Range>(Range*)
+   [7] std::vector<Range, std::allocator<Range> >::size() const [144] std::allocator_traits<std::allocator<char> >::deallocate(std::allocator<char>&, char*, unsigned long) [69] void std::_Destroy<Range*>(Range*, Range*)
+ [104] std::vector<Range, std::allocator<Range> >::max_size() const [36] std::_Optional_payload<Range, false, false>::_Optional_payload() [70] void std::_Destroy<Range*, Range>(Range*, Range*, std::allocator<Range>&)
+  [25] std::vector<Range, std::allocator<Range> >::operator[](unsigned long) const [84] std::_Optional_payload<Range, false, false>::_Optional_payload<Range&>(std::in_place_t, Range&) [66] char const* std::addressof<char const>(char const&)
+  [63] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_is_local() const [26] std::_Optional_payload<Range, false, false>::~_Optional_payload() [153] char* std::addressof<char>(char&)
+  [64] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data() const [106] Range* std::__uninitialized_copy<false>::__uninit_copy<std::move_iterator<Range*>, Range*>(std::move_iterator<Range*>, std::move_iterator<Range*>, Range*) [15] std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  [35] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::c_str() const [145] std::tuple<Interconnect*, std::default_delete<Interconnect> >::tuple<Interconnect*, std::default_delete<Interconnect>, true>() [18] std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  [45] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data() const [51] void std::vector<Range, std::allocator<Range> >::_M_realloc_insert<Range const&>(__gnu_cxx::__normal_iterator<Range*, std::vector<Range, std::allocator<Range> > >, Range const&) [43] std::operator~(std::_Ios_Fmtflags)
+  [32] std::optional<Range>::operator bool() const [117] std::vector<Range, std::allocator<Range> >::end() [88] bool std::operator==<Range*>(std::move_iterator<Range*> const&, std::move_iterator<Range*> const&)
+  [82] std::optional<Range>::operator*() & [118] std::vector<Range, std::allocator<Range> >::begin() [28] bool std::operator!=<Range>(std::optional<Range> const&, std::nullopt_t)
+ [130] std::allocator<Range>::allocator() [31] std::vector<Range, std::allocator<Range> >::push_back(Range const&) [89] bool std::operator!=<Range*>(std::move_iterator<Range*> const&, std::move_iterator<Range*> const&)
+ [131] std::allocator<Range>::~allocator() [146] std::vector<Range, std::allocator<Range> >::vector() [14] std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  [46] std::_Head_base<0ul, Interconnect*, false>::_M_head(std::_Head_base<0ul, Interconnect*, false> const&) [72] std::vector<Range, std::allocator<Range> >::~vector() [33] std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+ [120] std::_Head_base<0ul, Interconnect*, false>::_M_head(std::_Head_base<0ul, Interconnect*, false>&) [73] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_destroy(unsigned long) [56] std::operator|(std::_Ios_Openmode, std::_Ios_Openmode)
+ [132] std::_Head_base<0ul, Interconnect*, false>::_Head_base() [61] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose() [41] __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Range_chk::_S_chk(long, std::integral_constant<bool, true>)
+  [52] std::_Head_base<1ul, std::default_delete<Interconnect>, true>::_M_head(std::_Head_base<1ul, std::default_delete<Interconnect>, true>&) [147] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::_Alloc_hider(char*, std::allocator<char>&&) [42] __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::_Save_errno()
+ [133] std::_Head_base<1ul, std::default_delete<Interconnect>, true>::_Head_base() [123] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Alloc_hider::~_Alloc_hider() [38] __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::~_Save_errno()
+  [39] std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::get_deleter() [148] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_local_data() [87] operator new(unsigned long, void*)
+ [134] std::unique_ptr<Interconnect, std::default_delete<Interconnect> >::unique_ptr<std::default_delete<Interconnect>, void>(Interconnect*) [59] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_set_length(unsigned long) [1] main
