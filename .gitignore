@@ -82,3 +82,6 @@ _deps
 
 # build dir
 build
+
+# input file
+input.txt
