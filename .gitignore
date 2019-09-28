@@ -85,3 +85,6 @@ build
 
 # input file
 input.txt
+
+# output file
+output.txt
