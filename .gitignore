@@ -85,6 +85,7 @@ build
 
 # input file
 input.txt
+input-big.txt
 
 # output file
 output_*.txt
