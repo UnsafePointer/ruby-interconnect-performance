@@ -87,4 +87,4 @@ build
 input.txt
 
 # output file
-output.txt
+output_*.txt
