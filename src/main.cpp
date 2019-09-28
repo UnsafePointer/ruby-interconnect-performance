@@ -11,8 +11,10 @@ int main(int argc, char* argv[]) {
     std::unique_ptr<Interconnect> interconnect = std::make_unique<Interconnect>();
     for(std::string line; getline(input, line);) {
         uint32_t address = stoi(line);
-        std::string result = interconnect->load(address);
-        ss << result;
+        uint32_t offset = interconnect->load(address);
+        ss << std::dec << address;
+        ss << ",";
+        ss << std::dec << offset;
         ss << "\n";
     }
     std::ofstream myfile = std::ofstream();

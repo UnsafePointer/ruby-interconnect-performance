@@ -23,60 +23,60 @@ uint32_t Interconnect::maskRegion(uint32_t address) const {
     return address & regionMask[index];
 }
 
-std::string Interconnect::load(uint32_t address) const {
+uint32_t Interconnect::load(uint32_t address) const {
     uint32_t absoluteAddress = maskRegion(address);
 
     std::optional<uint32_t> offset = biosRange.contains(absoluteAddress);
     if (offset) {
-        return "BIOS";
+        return (*offset);
     }
     offset = ramRange.contains(absoluteAddress);
     if (offset) {
-        return "RAM";
+        return (*offset);
     }
     offset = interruptRequestControlRange.contains(absoluteAddress);
     if (offset) {
-        return "IRC";
+        return (*offset);
     }
     offset = dmaRegisterRange.contains(absoluteAddress);
     if (offset) {
-        return "DMA";
+        return (*offset);
     }
     offset = gpuRegisterRange.contains(absoluteAddress);
     if (offset) {
-        return "GPU";
+        return (*offset);
     }
     offset = timer0RegisterRange.contains(absoluteAddress);
     if (offset) {
-        return "TIMER0";
+        return (*offset);
     }
     offset = timer1RegisterRange.contains(absoluteAddress);
     if (offset) {
-        return "TIMER1";
+        return (*offset);
     }
     offset = timer2RegisterRange.contains(absoluteAddress);
     if (offset) {
-        return "TIMER2";
+        return (*offset);
     }
     offset = expansion1Range.contains(absoluteAddress);
     if (offset) {
-        return "EXPANSION1";
+        return (*offset);
     }
     offset = soundProcessingUnitRange.contains(absoluteAddress);
     if (offset) {
-        return "SPU";
+        return (*offset);
     }
     offset = scratchpadRange.contains(absoluteAddress);
     if (offset) {
-        return "SCRATCHPAD";
+        return (*offset);
     }
     offset = cdromRegisterRange.contains(absoluteAddress);
     if (offset) {
-        return "CDROM";
+        return (*offset);
     }
     offset = controllerRegisterRange.contains(absoluteAddress);
     if (offset) {
-        return "CONTROLLER";
+        return (*offset);
     }
-    return "NOTFOUND";
+    return 0;
 }

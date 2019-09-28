@@ -27,5 +27,5 @@ public:
     Interconnect();
     ~Interconnect();
 
-    std::string load(uint32_t address) const;
+    uint32_t load(uint32_t address) const;
 };
